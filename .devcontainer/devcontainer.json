@@ -20,9 +20,7 @@
     "extensions": [
         "editorconfig.editorconfig",
         "matklad.rust-analyzer",
-        "vadimcn.vscode-lldb",
-        "bungcip.better-toml",
-        "serayuzgur.crates"
+        "vadimcn.vscode-lldb"
     ]
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
