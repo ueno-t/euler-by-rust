@@ -1,6 +1,9 @@
 pub fn func_ex_div_some(x: i32, y: i32) -> Option<i32> {
-    let ans = if y == 0 { None } else { Some(x / y) };
-    ans
+    if y == 0 {
+        None
+    } else {
+        Some(x / y)
+    }
 }
 
 pub fn func_ex_div_result(x: i32, y: i32) -> Result<i32, &'static str> {

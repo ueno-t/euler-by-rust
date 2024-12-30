@@ -18,8 +18,7 @@
     "settings": {},
     // Add the IDs of extensions you want installed when the container is created.
     "extensions": [
-        "editorconfig.editorconfig",
-        "matklad.rust-analyzer",
+        "rust-lang.rust-analyzer",
         "vadimcn.vscode-lldb"
     ]
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
