@@ -33,6 +33,11 @@ pub fn solver(n: i32) -> i32 {
 mod tests {
     use super::*;
     #[test]
+    fn should_return_44() {
+        assert_eq!(solver(90), 44);
+    }
+
+    #[test]
     fn should_return_4613732() {
         assert_eq!(solver(4000000), 4613732);
     }
