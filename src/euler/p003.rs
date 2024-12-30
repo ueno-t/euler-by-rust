@@ -1,6 +1,6 @@
 /// The prime factors of `13195` are `5, 7, 3,` and `29` .
 /// What is the largest prime factor of the number `600851475143` ?
-pub fn solver(n: i64) -> i64 {
+pub fn solver(n: isize) -> isize {
     let mut n = n;
     let mut i = 2;
     while i * i <= n {

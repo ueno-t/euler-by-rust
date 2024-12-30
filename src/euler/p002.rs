@@ -2,8 +2,8 @@
 /// `1,2,3,5,8,13,21,34,55,89,...`
 /// By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 struct Fibonacci {
-    a: i32,
-    b: i32,
+    a: isize,
+    b: isize,
 }
 
 impl Fibonacci {
@@ -13,7 +13,7 @@ impl Fibonacci {
 }
 
 impl Iterator for Fibonacci {
-    type Item = i32;
+    type Item = isize;
     fn next(&mut self) -> Option<Self::Item> {
         let next = self.b + self.a;
         self.a = self.b;
@@ -22,7 +22,7 @@ impl Iterator for Fibonacci {
     }
 }
 
-pub fn solver(n: i32) -> i32 {
+pub fn solver(n: isize) -> isize {
     Fibonacci::new()
         .take_while(|&x| x < n)
         .filter(|&x| x % 2 == 0)
