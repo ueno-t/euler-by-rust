@@ -24,6 +24,17 @@ fn lcm(a: isize, b: isize) -> isize {
 mod tests {
     use super::*;
     #[test]
+    fn should_gcd() {
+        assert_eq!(gcd(4, 6), 2);
+        assert_eq!(gcd(8, 12), 4);
+    }
+    #[test]
+    fn should_lcm() {
+        assert_eq!(lcm(4, 6), 12);
+        assert_eq!(lcm(8, 12), 24);
+    }
+
+    #[test]
     fn should_return_2520() {
         assert_eq!(solver(10), 2520);
     }
