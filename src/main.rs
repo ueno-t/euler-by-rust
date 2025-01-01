@@ -9,4 +9,5 @@ fn main() {
     euler::p006::solver(100);
     euler::p007::solver(100001);
     euler::p008::solver(13);
+    euler::p009::solver(1000);
 }
