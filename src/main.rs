@@ -6,4 +6,5 @@ fn main() {
     euler::p003::solver(600851475143);
     euler::p004::solver(3);
     euler::p005::solver(20);
+    euler::p006::solver(100);
 }
