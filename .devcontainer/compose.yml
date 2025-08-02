@@ -1,0 +1,13 @@
+services:
+  rust:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    tty: true
+    working_dir: /workspace
+    volumes:
+      - ../:/workspace:cached
+      - rust-target:/home/vscode/rust:cached
+    user: vscode
+volumes:
+  rust-target:
