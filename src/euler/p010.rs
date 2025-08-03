@@ -14,7 +14,7 @@ pub fn solver(n: usize) -> usize {
 
 fn is_prime(n: usize) -> bool {
     if n < 2 {
-        return false;
+        false
     } else if n == 2 {
         return true;
     } else if n % 2 == 0 {
