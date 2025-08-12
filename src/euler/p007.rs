@@ -16,9 +16,9 @@ fn is_prime(n: isize) -> bool {
     if n < 2 {
         false
     } else if n == 2 {
-        return true;
+        true
     } else if n % 2 == 0 {
-        return false;
+        false
     } else {
         let mut i = 3;
         // 平方根以下の数まで調べれば十分
@@ -28,7 +28,7 @@ fn is_prime(n: isize) -> bool {
             }
             i += 2;
         }
-        return true;
+        true
     }
 }
 
