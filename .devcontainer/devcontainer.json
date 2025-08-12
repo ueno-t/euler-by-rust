@@ -1,12 +1,13 @@
 {
     "name": "rust",
-    "image": "mcr.microsoft.com/vscode/devcontainers/rust:latest",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:debian",
     "remoteUser": "vscode",
     "containerUser": "vscode",
     "build": {
         "context": ".."
     },
     "features": {
+        "ghcr.io/devcontainers/features/rust:1": {},
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": true,
             "configureZshAsDefaultShell": true,
