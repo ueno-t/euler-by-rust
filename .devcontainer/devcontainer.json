@@ -1,15 +1,17 @@
 {
-    "name": "Rust",
-    "dockerComposeFile": "compose.yml",
-    "service": "rust",
-    "workspaceFolder": "/workspace",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "rust-lang.rust-analyzer",
-                "vadimcn.vscode-lldb"
-            ]
-        }
+    "name": "rust",
+    "image": "mcr.microsoft.com/vscode/devcontainers/rust:latest",
+    "remoteUser": "vscode",
+    "containerUser": "vscode",
+    "build": {
+        "context": ".."
     },
-    "remoteUser": "vscode"
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": false,
+            "installOhMyZshConfig": false
+        }
+    }
 }
