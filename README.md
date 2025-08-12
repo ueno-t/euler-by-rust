@@ -18,12 +18,7 @@ And if you see "Dev Container: Rust Template" in the bottom left corner, you're 
 ## The following are installed.
 
 - Docker image
-    - rust:1.88-bullseye
-- CLI tools
-    - git
-    - cargo-edit
-    - cargo-watch
-- VSCode extensions
-    - [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
-    - [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
-
+    - debian
+- features
+    - rust
+    - common-utils
