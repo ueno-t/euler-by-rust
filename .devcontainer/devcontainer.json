@@ -9,10 +9,7 @@
     "features": {
         "ghcr.io/devcontainers/features/rust:1": {},
         "ghcr.io/devcontainers/features/common-utils:2": {
-            "installZsh": true,
-            "configureZshAsDefaultShell": true,
-            "installOhMyZsh": false,
-            "installOhMyZshConfig": false
+            "configureZshAsDefaultShell": true
         }
     }
 }
